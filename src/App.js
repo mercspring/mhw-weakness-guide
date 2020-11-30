@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import MonsterCard from './components/monster-card'
+import {Monsters} from './data/monsters.js'
 function App() {
+//  const monsters = Monsters; 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MonsterCard img={Monsters[1].icon} name={Monsters[1].attributes.name}/>
+      
     </div>
   );
 }
