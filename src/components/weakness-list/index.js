@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Weaknesses() {
+export default function Weaknesses(props) {
     return (
-        <div className="Weaknesses">
+        <div className={props.hidden ? "Weaknesses hide-table" : "Weaknesses view-table"}>
             <table>
                 <tr>
                     <td className="fire icon"></td>
@@ -22,6 +22,28 @@ export default function Weaknesses() {
                 </tr>
                 <tr>
                     <td className="dragon icon"></td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+            </table>
+            <table className="status-table">
+                <tr>
+                    <td className="poison icon"></td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td className="sleep icon"></td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td className="paralysis icon"></td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td className="blast icon"></td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td className="stun icon"></td>
                     <td>⭐⭐⭐</td>
                 </tr>
             </table>

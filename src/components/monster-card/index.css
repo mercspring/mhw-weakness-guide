@@ -21,7 +21,6 @@
 .image-background{
     width:100%;
     height: 100%;
-    /* background-color: darkorchid; */
 
 }
 
@@ -35,8 +34,17 @@
     opacity: 100%
 }
 
+.hide-table{
+    transition: all .5s linear;
+    opacity: 0%
+}
+
+.view-table{
+    transition: all .5s linear;
+    opacity: 100%
+}
+
 body{
-    /* background-color: darkorchid; */
 }
 
 .flex{
@@ -60,6 +68,23 @@ body{
     background-image: url("../../icons/mhw-dragon-damage.webp");
 }
 
+.poison{
+    background-image: url("../../icons/mhw-poison.webp");
+}
+.sleep{
+    background-image: url("../../icons/mhw-sleep.webp");
+}
+.paralysis{
+    background-image: url("../../icons/mhw-paralysis.webp");
+}
+.blast{
+    background-image: url("../../icons/mhw-blastblight.webp");
+}
+.stun{
+    background-image: url("../../icons/mhw-stun.webp");
+}
+
+
 .icon {
     background-size: 1.3rem;
     background-repeat: no-repeat;
@@ -73,7 +98,15 @@ body{
 }
 
 .Weaknesses{
+    padding-left: 95px;
     position: absolute;
 }
 
+table{
+    display: inline-block;
+    border-collapse: collapse;
+}
+.status-table{
+    padding-left: 5px;
+}
 

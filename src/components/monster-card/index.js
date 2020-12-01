@@ -16,11 +16,11 @@ export default function MonsterCard(props) {
             <h1>Name: {props.name}</h1>
             <h2>{props.img}</h2>
             <div className="wrapper">
-                <span className={size === "large" ? "name" : "view-name"}>{props.name}</span>
-                <Weaknesses/>
-                {/* <div className="image-background">
+                {/* <span className={size === "large" ? "name" : "view-name"}>{props.name}</span> */}
+                <Weaknesses hidden={size === "large" ? true : false}/>
+                <div className="image-background">
                     <img onClick={onClick} className={size === "large" ? null : "clicked"} src={process.env.PUBLIC_URL + "/img/monsters/" + props.img}></img>
-                </div> */}
+                </div>
             </div>
         </div>
     )
