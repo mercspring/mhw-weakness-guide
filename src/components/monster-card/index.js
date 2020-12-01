@@ -17,7 +17,7 @@ export default function MonsterCard(props) {
             <h2>{props.img}</h2>
             <div className="wrapper">
                 {/* <span className={size === "large" ? "name" : "view-name"}>{props.name}</span> */}
-                <Weaknesses hidden={size === "large" ? true : false}/>
+                <Weaknesses monsterInfo = {props.monsterInfo} hidden={size === "large" ? true : false}/>
                 <div className="image-background">
                     <img onClick={onClick} className={size === "large" ? null : "clicked"} src={process.env.PUBLIC_URL + "/img/monsters/" + props.img}></img>
                 </div>

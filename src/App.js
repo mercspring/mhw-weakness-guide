@@ -5,7 +5,7 @@ function App() {
 //  const monsters = Monsters; 
   return (
     <div className="App">
-      <MonsterCard img={Monsters[1].icon} name={Monsters[1].attributes.name}/>
+      <MonsterCard monsterInfo = {Monsters[1]}img={Monsters[1].icon} name={Monsters[1].attributes.name}/>
       
     </div>
   );
