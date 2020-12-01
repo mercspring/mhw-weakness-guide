@@ -1,17 +1,19 @@
-.img{
+img{
     transition: all .3s linear;
-    width:100%;
-    background-color: inherit;
+    width:330px;
+    background-color: white;
 }
 
 .clicked{
-    transform: translate(-37%,-37%) scale(0.3);
+    transform: translate(-35%,-33.5%) scale(0.31);
     transition: all .3s linear;
 }
 
 .wrapper{
     position: relative;
-    /* background-color: darkorchid; */
+    display: flex;
+    justify-content: left;
+    width: 300px;
 }
 
 .view-name, .image-background, .name, .clicked, img{
@@ -83,14 +85,26 @@ body{
 .stun{
     background-image: url("../../icons/mhw-stun.webp");
 }
+.bleeding{
+    background-image: url("../../icons/mhw-bleeding.webp");
+}
+.defense-down{
+    background-image: url("../../icons/mhw-defense-down.webp");
+}
+.weak-roar{
+    background-image: url("../../icons/mhw-weak-roar.webp");
+}
+.strong-roar{
+    background-image: url("../../icons/mhw-strong-roar.webp");
+}
 
 
 .icon {
-    background-size: 1.3rem;
+    background-size: 15px;
     background-repeat: no-repeat;
     display: inline-block;
-    width: 25px;
-    height: 1.5rem;
+    width: 15px;
+    height: 15px;
 }
 
 .stars{
@@ -98,8 +112,8 @@ body{
 }
 
 .Weaknesses{
-    padding-left: 95px;
-    position: absolute;
+    /* padding-left: 95px; */
+    /* position: absolute; */
 }
 
 table{
@@ -108,5 +122,9 @@ table{
 }
 .status-table{
     padding-left: 5px;
+    font-size: 11pt;
 }
-
+.helper{
+    padding-top: 100px;
+    flex-basis: 35%;
+}

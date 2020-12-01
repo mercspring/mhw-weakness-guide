@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 
 export default function Weaknesses(props) {
     function setPhysiology(weakness){
@@ -14,7 +15,7 @@ export default function Weaknesses(props) {
     }
     return (
         <div className={props.hidden ? "Weaknesses hide-table" : "Weaknesses view-table"}>
-            <table>
+            <table className="element-table">
                 <tr>
                     <td className="fire icon"></td>
                     <td>{setPhysiology(props.monsterInfo.attributes.physiology.fire)}</td>
