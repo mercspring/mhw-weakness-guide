@@ -1,22 +1,37 @@
 img{
     transition: all .3s linear;
-    width:330px;
-    background-color: white;
+    width:230px;
+    height:230px;
+    padding-left: 10px;
+    background-color: black;
+}
+.cover{
+    transition: all .3s linear;
+    width:240px;
+    background-color: grey;
 }
 
 .clicked{
-    transform: translate(-35%,-33.5%) scale(0.31);
+    transform: translate(-30%,-20%) scale(0.4);
     transition: all .3s linear;
+    margin-bottom: 10px;
 }
 
 .wrapper{
     position: relative;
-    display: flex;
     justify-content: left;
-    width: 300px;
+    width: 260px;
+    height:230px;
+    display: grid;
+    grid-template-areas: 
+    "image image table table"
+    "image image table table"
+    /* "....... ....... table table" */
+    "ailments  ailments ailments wiki-link";
+    grid-template-columns: 50px 50px 80px 80px;
 }
 
-.view-name, .image-background, .name, .clicked, img{
+.view-name, .image-background, .name, .clicked, .cover{
     position: absolute;
 }
 
@@ -97,6 +112,9 @@ body{
 .strong-roar{
     background-image: url("../../icons/mhw-strong-roar.webp");
 }
+.effluvial-buildup{
+    background-image: url("../../icons/mhw-effluvial.webp");
+}
 
 
 .icon {
@@ -112,8 +130,9 @@ body{
 }
 
 .Weaknesses{
-    /* padding-left: 95px; */
-    /* position: absolute; */
+    height: 140px;
+    margin: 0 auto;
+    grid-area: table;
 }
 
 table{
@@ -124,7 +143,32 @@ table{
     padding-left: 5px;
     font-size: 11pt;
 }
-.helper{
-    padding-top: 100px;
-    flex-basis: 35%;
+.wiki-link{
+grid-area: wiki-link;
+background-color: khaki;
+}
+.ailments{
+grid-area: ailments;
+background-color: lawngreen;
+height: 90px;
+}
+
+.table{
+    background-color: lightcoral;
+    width:100%;
+}
+
+.monster-type{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding-left: 2px;
+}
+
+h2{
+    padding: 0;
+    margin: 0;
+}
+
+.monster-card{
+    margin-bottom: 20px;
 }

@@ -413,7 +413,7 @@ export const Monsters = [
         ]
       }
     },
-    "icon": "barroth_(mud)_icon.png"
+    "icon": "barroth_icon.png"
   },
   {
     "type": "monsters",
@@ -914,7 +914,7 @@ export const Monsters = [
         ]
       }
     },
-    "icon": "blackveil_vaal hazak_icon.png"
+    "icon": "blackveil_vaal_hazak_icon.png"
   },
   {
     "type": "monsters",
@@ -1733,7 +1733,7 @@ export const Monsters = [
         ]
       }
     },
-    "icon": "jyuratodus_(mud)_icon.png"
+    "icon": "jyuratodus_icon.png"
   },
   {
     "type": "monsters",
@@ -1917,7 +1917,7 @@ export const Monsters = [
         ]
       }
     },
-    "icon": "kulve_taroth (golden)_icon.png"
+    "icon": "kulve_taroth_icon.png"
   },
   {
     "type": "monsters",
@@ -2058,7 +2058,7 @@ export const Monsters = [
         ]
       }
     },
-    "icon": "lavasioth_(hard)_icon.png"
+    "icon": "lavasioth_icon.png"
   },
   {
     "type": "monsters",
@@ -3575,7 +3575,7 @@ export const Monsters = [
         ]
       }
     },
-    "icon": "scarred_yian garuga_icon.png"
+    "icon": "scarred_yian_garuga_icon.png"
   },
   {
     "type": "monsters",
@@ -4575,7 +4575,7 @@ export const Monsters = [
         ]
       }
     },
-    "icon": "xeno'jiiva_icon.png"
+    "icon": "xenojiiva_icon.png"
   },
   {
     "type": "monsters",

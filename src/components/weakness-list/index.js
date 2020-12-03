@@ -14,7 +14,7 @@ export default function Weaknesses(props) {
         }
     }
     return (
-        <div className={props.hidden ? "Weaknesses hide-table" : "Weaknesses view-table"}>
+        <div className={props.hidden ? "Weaknesses table hide-table" : "Weaknesses table view-table"}>
             <table className="element-table">
                 <tr>
                     <td className="fire icon"></td>

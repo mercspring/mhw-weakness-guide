@@ -3,7 +3,7 @@ import React from 'react'
 export default function Ailments(props) {
 
     return (
-        <table>
+        <table className={props.hidden ? "hide-table" : "view-table"}>
             {props.monsterInfo.relationships.ailments.data.map((elm, index) => {
                 let type, icon;
                 if(elm.id === "fireBlight"){
@@ -27,6 +27,24 @@ export default function Ailments(props) {
                 }else if (elm.id === "weakRoar"){
                     type = "Weak Roar";
                     icon = "weak-roar";
+                }else if (elm.id === "sleep"){
+                    type = "Sleep";
+                    icon = "sleep";
+                } else if (elm.id === "stun"){
+                    type = "Stun";
+                    icon = "stun";
+                }else if (elm.id === "poison"){
+                    type = "Poison";
+                    icon = "poison";
+                } else if (elm.id === "effluvialBuildup"){
+                    type = "Effluvial Buildup";
+                    icon = "effluvial-buildup";
+                }else if (elm.id === "blastBlight"){
+                    type = "Blast Blight";
+                    icon = "blast";
+                }else if (elm.id === "paralysis"){
+                    type = "Paralysis";
+                    icon = "paralysis";
                 }else if (elm.id === "bleeding"){
                     type = "Bleeding";
                     icon = "bleeding";
@@ -37,12 +55,6 @@ export default function Ailments(props) {
                     type = "unknown";
                 }
             return <tr> <td className = {`icon ${icon}`}></td> <td> {type} </td></tr>
-
-
-
-
-
-
             })}
 
         </table>

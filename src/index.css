@@ -1,0 +1,25 @@
+.container{
+    display: grid;
+    grid-template-areas: "image table table"
+                         "image table table"
+                         "ailments wiki-link wiki-link";
+    grid-template-columns: 65px 65px 65px;
+}
+.image{
+    grid-area: image;
+    height: 100px;
+}
+.table{
+    grid-area: table;
+}
+.ailments{
+    grid-area: ailments;
+}
+.wiki-link{
+    grid-area: wiki-link;
+}
+
+.box{
+
+    background-color: red;
+}
