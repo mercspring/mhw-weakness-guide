@@ -12,7 +12,7 @@ img{
 }
 
 .clicked{
-    transform: translate(-30%,-20%) scale(0.4);
+    transform: translate(-30%,-26%) scale(0.4);
     transition: all .3s linear;
     margin-bottom: 10px;
 }
@@ -29,6 +29,8 @@ img{
     /* "....... ....... table table" */
     "ailments  ailments ailments wiki-link";
     grid-template-columns: 50px 50px 80px 80px;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 0px;
 }
 
 .view-name, .image-background, .name, .clicked, .cover{
@@ -130,7 +132,7 @@ body{
 }
 
 .Weaknesses{
-    height: 140px;
+    height: 115px;
     margin: 0 auto;
     grid-area: table;
 }
@@ -159,6 +161,7 @@ height: 90px;
 }
 
 .monster-type{
+    font-variant: small-caps;
     writing-mode: vertical-rl;
     text-orientation: upright;
     padding-left: 2px;

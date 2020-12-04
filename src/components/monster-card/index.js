@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import Weaknesses from '../weakness-list'
-import Ailments from '../ailment-list'
-import './index.css'
+import React, { useState } from 'react';
+import Weaknesses from '../weakness-list';
+import Ailments from '../ailment-list';
+import './index.css';
 
 export default function MonsterCard(props) {
     const [size, setSize] = useState("large")
@@ -11,6 +11,10 @@ export default function MonsterCard(props) {
         } else {
             setSize("large")
         }
+    }
+
+    function getMonsterType() {
+        return props.monsterInfo.relationships.species.data.id.replace(/([A-Z])/g, " $1").toLowerCase();
     }
     return (
         <div className="monster-card">
@@ -22,8 +26,8 @@ export default function MonsterCard(props) {
                 <div className="wiki-link">wiki link</div>
                 <Weaknesses monsterInfo={props.monsterInfo} hidden={size === "large" ? true : false} />
                 <div onClick={onClick} className={size === "large" ? "cover flex" : "clicked cover flex"} >
-                    <img src={process.env.PUBLIC_URL + "/img/monsters/" + props.img} />
-                    <span className={size === "large" ? "monster-type view-table" : "hide-table monster-type"}>{props.monsterInfo.relationships.species.data.id}</span>
+                    <img loading="lazy" src={process.env.PUBLIC_URL + "/img/monsters/" + props.img} />
+                    <span className={size === "large" ? "monster-type view-table" : "hide-table monster-type"}>{getMonsterType()}</span>
                 </div>
             </div>
         </div>
