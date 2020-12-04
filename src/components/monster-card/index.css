@@ -26,7 +26,6 @@ img{
     grid-template-areas: 
     "image image table table"
     "image image table table"
-    /* "....... ....... table table" */
     "ailments  ailments ailments wiki-link";
     grid-template-columns: 50px 50px 80px 80px;
     grid-template-rows: auto auto auto auto;
@@ -72,10 +71,10 @@ body{
 
 
 .fire{
-    background-image: url("../../icons/mhw-fire-damage.webp");
+    background-image: url("/src/icons/mhw-fire-damage.webp");
 }
 .water{
-    background-image: url("../../icons/mhw-water-damage.webp");
+    background-image: url("/src/icons/mhw-water-damage.webp");
 }
 .thunder{
     background-image: url("../../icons/mhw-thunder-damage.webp");
