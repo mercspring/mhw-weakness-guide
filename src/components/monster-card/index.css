@@ -49,7 +49,6 @@ img{
 
 .view-name{
     transition: all .5s linear;
-    opacity: 100%;
 }
 
 .hide-table{
@@ -59,10 +58,6 @@ img{
 
 .view-table{
     transition: all .5s linear;
-    opacity: 100%;
-}
-
-body{
 }
 
 .flex{
