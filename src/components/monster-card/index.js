@@ -18,12 +18,14 @@ export default function MonsterCard(props) {
     }
     return (
         <div className="monster-card">
-            <h2>{props.name}</h2>
+            <h2 className="monster-name">{props.name}</h2>
             <div className="wrapper" >
-                <div className="ailments" >
+                <div className="ailments flex" >
                     {props.monsterInfo.relationships.ailments ? <Ailments hidden={size === "large" ? true : false} monsterInfo={props.monsterInfo} /> : null}
                 </div>
-                <div className="wiki-link">wiki link</div>
+                <div className={size === "small" ? "wiki-link view-table flex" : "hide-table wiki-link flex"}>
+                    <span >wiki link</span>
+                </div>
                 <Weaknesses monsterInfo={props.monsterInfo} hidden={size === "large" ? true : false} />
                 <div onClick={onClick} className={size === "large" ? "cover flex" : "clicked cover flex"} >
                     <img loading="lazy" src={process.env.PUBLIC_URL + "/img/monsters/" + props.img} />

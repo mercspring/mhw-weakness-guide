@@ -1,35 +1,48 @@
 img{
     transition: all .3s linear;
-    width:230px;
-    height:230px;
+    width:205px;
+    height:205px;
     padding-left: 10px;
-    background-color: black;
+}
+.monster-name{
+    font-variant: small-caps;
 }
 .cover{
     transition: all .3s linear;
-    width:240px;
-    background-color: grey;
+    /* width:240px; */
+}
+
+body{
+background: hsla(99, 11%, 5%, 0.73);
 }
 
 .clicked{
     transform: translate(-30%,-26%) scale(0.4);
     transition: all .3s linear;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .wrapper{
     position: relative;
     justify-content: left;
     width: 260px;
-    height:230px;
+    /* height:230px; */
     display: grid;
     grid-template-areas: 
     "image image table table"
-    "image image table table"
+    /* "image image table table" */
     "ailments  ailments ailments wiki-link";
-    grid-template-columns: 50px 50px 80px 80px;
-    grid-template-rows: auto auto auto auto;
-    grid-gap: 0px;
+    grid-template-columns: 50px 50px 60px 100px;
+    grid-template-rows: auto auto;
+    gap: 0px;
+    border: ridge white 1pt;
+    background: hsla(128, 16%, 79%, 0.73);
+    margin: 0px 5px;
+}
+
+.table, .wiki.link, .ailments{
+    /* border: 1pt ridge black; */
+    background: hsla(128, 16%, 70%, 0.9);
 }
 
 .view-name, .image-background, .name, .clicked, .cover{
@@ -134,6 +147,7 @@ img{
 table{
     display: inline-block;
     border-collapse: collapse;
+    margin: auto;
 }
 .status-table{
     padding-left: 5px;
@@ -141,16 +155,17 @@ table{
 }
 .wiki-link{
 grid-area: wiki-link;
-background-color: khaki;
+justify-content: center;
+align-items: center;
 }
 .ailments{
 grid-area: ailments;
-background-color: lawngreen;
 height: 90px;
+justify-content: center;
+align-items: center;
 }
 
 .table{
-    background-color: lightcoral;
     width:100%;
 }
 
