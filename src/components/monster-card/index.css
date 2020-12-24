@@ -6,31 +6,29 @@ img{
 }
 .monster-name{
     font-variant: small-caps;
+    padding-left: 6px;
 }
 .cover{
     transition: all .3s linear;
-    /* width:240px; */
 }
 
 body{
 background: hsla(99, 11%, 5%, 0.73);
+margin: 5vw;
 }
 
 .clicked{
     transform: translate(-30%,-26%) scale(0.4);
     transition: all .3s linear;
-    /* margin-bottom: 10px; */
 }
 
 .wrapper{
     position: relative;
     justify-content: left;
     width: 260px;
-    /* height:230px; */
     display: grid;
     grid-template-areas: 
     "image image table table"
-    /* "image image table table" */
     "ailments  ailments ailments wiki-link";
     grid-template-columns: 50px 50px 60px 100px;
     grid-template-rows: auto auto;
@@ -41,7 +39,6 @@ background: hsla(99, 11%, 5%, 0.73);
 }
 
 .table, .wiki.link, .ailments{
-    /* border: 1pt ridge black; */
     background: hsla(128, 16%, 70%, 0.9);
 }
 
@@ -173,7 +170,7 @@ align-items: center;
     font-variant: small-caps;
     writing-mode: vertical-rl;
     text-orientation: upright;
-    padding-left: 2px;
+    padding: 1em
 }
 
 h2{
@@ -183,4 +180,20 @@ h2{
 
 .monster-card{
     margin-bottom: 20px;
+}
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin: auto 0;
+
+}
+.search-bar{
+    flex-basis: 80%;
+}
+
+.search-label{
+    font-size: 1.5em;
+    padding-right: .5em;
+    font-variant: small-caps;
 }
