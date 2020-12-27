@@ -15,6 +15,7 @@ img{
 body{
 background: hsla(99, 11%, 5%, 0.73);
 margin: 5vw;
+margin-top: 0px;
 }
 
 .clicked{
@@ -184,16 +185,24 @@ h2{
 
 .search-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto 0;
-
+    padding: 0 5vw;
+    flex-wrap: wrap;
 }
 .search-bar{
-    flex-basis: 80%;
+    /* flex-basis: 40%; */
+    height: 12pt;
 }
 
 .search-label{
     font-size: 1.5em;
     padding-right: .5em;
     font-variant: small-caps;
+}
+
+.site-name{
+    /* flex-basis: 60%; */
+    font-size: 15pt;
+    margin: 0px;
 }
