@@ -191,7 +191,6 @@ h2{
     flex-wrap: wrap;
 }
 .search-bar{
-    /* flex-basis: 40%; */
     height: 12pt;
 }
 
@@ -203,6 +202,10 @@ h2{
 
 .site-name{
     /* flex-basis: 60%; */
-    font-size: 15pt;
+    font-size: 18pt;
     margin: 0px;
+}
+
+.site-name, .search-label, .search-container, .search-bar{
+    margin-bottom: 10px;
 }
