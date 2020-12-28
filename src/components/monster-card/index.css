@@ -1,6 +1,6 @@
 img{
     transition: all .3s linear;
-    width:250px;
+    width:270px;
     height:205px;
     padding-left: 10px;
 
@@ -27,12 +27,12 @@ margin-top: 0px;
 .wrapper{
     position: relative;
     justify-content: left;
-    width: 300px;
+    width: 320px;
     display: grid;
     grid-template-areas: 
     "image image table table"
     "ailments  ailments ailments wiki-link";
-    grid-template-columns: 50px 50px 80px 120px;
+    grid-template-columns: 55px 55px 80px 130px;
     grid-template-rows: auto auto;
     gap: 0px;
     border: ridge white 1pt;
@@ -141,6 +141,9 @@ margin-top: 0px;
     height: 115px;
     margin: 0 auto;
     grid-area: table;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 table{

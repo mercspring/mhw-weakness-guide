@@ -26,7 +26,7 @@ export default function MonsterCard(props) {
                 <div className={size === "small" ? "wiki-link view-table flex" : "hide-table wiki-link flex"}>
                     <a href={"https://monsterhunterworld.wiki.fextralife.com/" + props.monsterInfo.attributes.name.replace(/ /, "+")} target="_blank">Wiki🔗</a>
                 </div>
-                    <Weaknesses monsterInfo={props.monsterInfo} hidden={size === "large" ? true : false} />
+                <Weaknesses monsterInfo={props.monsterInfo} hidden={size === "large" ? true : false} />
                 <div onClick={onClick} className={size === "large" ? "cover flex" : "clicked cover flex"} >
                     <img loading="lazy" src={process.env.PUBLIC_URL + "/img/monsters/" + props.img} />
                     <span className={size === "large" ? "monster-type view-table" : "hide-table monster-type"}>{getMonsterType()}</span>
