@@ -19,10 +19,8 @@ export default function MonsterCard(props) {
     return (
         <div className="monster-card">
             <h2 className="monster-name">{props.name}</h2>
-            <div className="wrapper" >
-                <div className="ailments flex" >
-                    {props.monsterInfo.relationships.ailments ? <Ailments hidden={size === "large" ? true : false} monsterInfo={props.monsterInfo} /> : null}
-                </div>
+            <div className="wrapper">
+                    <Ailments hidden={size === "large" ? true : false} monsterInfo={props.monsterInfo} />
                 <div className={size === "small" ? "wiki-link view-table flex" : "hide-table wiki-link flex"}>
                     <a href={"https://monsterhunterworld.wiki.fextralife.com/" + props.monsterInfo.attributes.name.replace(/ /, "+")} target="_blank">Wiki🔗</a>
                 </div>

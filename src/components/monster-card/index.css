@@ -40,7 +40,10 @@ margin-top: 0px;
     margin: 0px 5px;
 }
 
-.table, .wiki.link, .ailments{
+.table, .wiki.link {
+    background: hsla(128, 16%, 70%, 0.9);
+}
+.color-clicked{
     background: hsla(128, 16%, 70%, 0.9);
 }
 
@@ -165,6 +168,7 @@ grid-area: ailments;
 height: 90px;
 justify-content: center;
 align-items: center;
+    transition: all .5s linear;
 }
 
 .table{

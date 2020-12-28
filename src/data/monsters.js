@@ -4,7 +4,7 @@ export const Monsters = [
     "type": "monsters",
     "id": "acidicGlavenus",
     "attributes": {
-      "name": "Acidic Glavenus",
+      "name": "Acidic Glavenus (Crystallized)",
       "slug": "acidic-glavenus",
       "order": 46,
       "expansion": "MHWI",
