@@ -1,8 +1,9 @@
 img{
     transition: all .3s linear;
-    width:205px;
+    width:250px;
     height:205px;
     padding-left: 10px;
+
 }
 .monster-name{
     font-variant: small-caps;
@@ -26,12 +27,12 @@ margin-top: 0px;
 .wrapper{
     position: relative;
     justify-content: left;
-    width: 260px;
+    width: 300px;
     display: grid;
     grid-template-areas: 
     "image image table table"
     "ailments  ailments ailments wiki-link";
-    grid-template-columns: 50px 50px 60px 100px;
+    grid-template-columns: 50px 50px 80px 120px;
     grid-template-rows: auto auto;
     gap: 0px;
     border: ridge white 1pt;

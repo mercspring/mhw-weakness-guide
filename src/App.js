@@ -4,6 +4,7 @@ import SearchBar from './components/search-bar';
 import Header from './components/header';
 import { Monsters } from './data/monsters.js';
 import "./index.css";
+import "./css-reset.css";
 function App() {
   //  const monsters = Monsters; 
 const [monsterList, setMonsterList] = useState(Monsters)
